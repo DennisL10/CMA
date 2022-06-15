@@ -75,6 +75,20 @@ a {
   text-align: center;
 }
 
+#formUser{
+  -webkit-border-radius: 10px 10px 10px 10px;
+  font-family: Candara;
+  border-radius: 10px 10px 10px 10px;
+  background: #fff;
+  padding: 30px;
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+  position: relative;
+  -webkit-box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
 #formFooter {
   background-color: #fff;
   border-top: 1px solid #dce8f1;
@@ -126,7 +140,10 @@ button[type='reset']:active {
   transform: scale(0.95);
 }
 
-input[type='text'] {
+input[type='number'],
+input[type='tel'],
+input[type='text'],
+input[type='email']{
   background-color: rgba(86, 186, 237, 0.55);
   border: none;
   color: black;

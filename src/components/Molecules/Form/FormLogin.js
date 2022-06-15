@@ -7,9 +7,6 @@ import logo from '../../../assets/logo.png';
 import Input from '../../Atoms/Input';
 import Button from '../../Atoms/buttons/button';
 
-
-
-
 const SignInForm = () => {
   const MySwal = withReactContent(Swal);
   const [User, setUser] = useState('');
@@ -60,10 +57,6 @@ const SignInForm = () => {
                 showConfirmButton: false,
                 timer: 2500
               });
-              cookies.set('token', response.headers['auth-token'], {
-                path: '/',
-                maxAge: 86400
-              });
             },
             async (error) => {
               await MySwal.fire({
@@ -79,8 +72,6 @@ const SignInForm = () => {
       }
     }
   };
-
-
 
   return (
     <div className="App">

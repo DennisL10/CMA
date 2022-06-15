@@ -4,7 +4,7 @@ import SignInForm from '../components/Molecules/Form/FormLogin';
 
 class Home extends Component {
   render() {
-    return <SignInForm/>;
+    return <SignInForm />;
   }
 }
 
