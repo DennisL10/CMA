@@ -57,6 +57,7 @@ const SignInForm = () => {
                 showConfirmButton: false,
                 timer: 2500
               });
+              cookies.set('token', response.data.token, { path: '/' });
             },
             async (error) => {
               await MySwal.fire({
@@ -74,6 +75,7 @@ const SignInForm = () => {
   };
 
   return (
+
     <div className="App">
       <header className="App-header">
         <div className="wrapper fadeInDown">
@@ -103,7 +105,7 @@ const SignInForm = () => {
               />
               <br />
               <br />
-              <Button className="btnlogin" type="submit" path="/Dashboard">
+              <Button className="btnlogin" type="submit" path="/dashboard">
                 INICIAR SESION
               </Button>
             </form>
